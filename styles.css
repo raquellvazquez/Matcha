@@ -316,3 +316,61 @@
         grid-column-gap: 40px;
     }
 }
+
+/* CSS GET STARTED */
+
+.container-getStarted {
+    display: flex;
+    flex-direction: column;
+    background: #025157;
+    color: #fff;
+    border-radius: 10px;
+    padding: 12vw 8.75vw;
+    margin: 16px;
+}
+
+.container-getStarted .getStatted-title {
+    font-family: vesterbrobold,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+.container-getStarted .getStatted-link {
+    font-family: 'IBM Plex Sans',Arial,sans-serif;
+    line-height: 46px;
+    font-size: 16px;
+}
+
+.container-getStarted .request-btn {
+    margin-top: 40px;
+    color: #6abf4b;
+    text-decoration: none;
+}  
+
+.btn-get {
+    background-color: #67b54b;
+    color: #fff;
+    border-style: none ;
+    border-radius: 5px;
+    padding: 10px 24px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+@media (min-width: 992px) {
+    .container-getStarted {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-around;
+        padding: 80px 84px; 
+    }
+
+    .container-getStarted .getStatted-title {
+        font-size: 34px;
+    }
+}
+

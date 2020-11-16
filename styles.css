@@ -374,3 +374,155 @@
     }
 }
 
+
+/* CSSS FOOTER */ 
+
+.container-footer {
+    margin: 16px;
+}
+
+.footer-copyrigth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.footer-copyrigth > p {
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-social > a{
+    margin-right: 19px;
+}
+
+.footer-contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.footer-contact .title {
+    font-family: 'IBM Plex Sans',Arial,sans-serif;
+    font-size: 13px;
+    color: #025157;
+    margin-bottom: 26px;
+    margin-top: 26px;
+}
+
+.footer-contact .subtitle { 
+    font-family: 'IBM Plex Sans',Arial,sans-serif;
+    font-size: 16px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+    color: #4a4a4a;
+}
+
+li {
+    padding-top: 16px;
+}
+
+.input-email {
+    border-left: 1px solid #025157;
+    border-top: 1px solid #025157;
+    border-bottom: 1px solid #025157;
+    height: 48px;
+    width: 50%;
+    color: #4a4a4a;
+    padding: 16px;
+    margin-right: 0;
+}
+
+.btn-email {
+        height: 48px;
+        width: auto;
+        border: 0;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        background-color: #025157;
+        cursor: pointer;
+        font-family: 'IBM Plex Sans',Arial,sans-serif;
+}
+
+.send-email {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) { 
+
+    .footer-copyrigth {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-social {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer-contact {
+        display: grid;
+        grid-template-columns: 50% repeat(3, 1fr);
+        text-align: start;
+    }
+
+    .send-email {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 992px) { 
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    } 
+    
+    .footer-social {
+        margin-bottom: 0;
+        padding-left: 24px ;
+    }
+
+    .container-footer {
+        width: 70%;
+        margin: 0 auto;
+    } 
+    .send-email {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+
+

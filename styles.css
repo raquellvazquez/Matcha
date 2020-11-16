@@ -64,7 +64,7 @@
     text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
     .container-main {
         width: 70%;
@@ -107,7 +107,7 @@
 
     .video {
         width: 560px ;
-        height: 315px;
+        height: 400px;
     }
 }
 
@@ -133,7 +133,7 @@
     margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
     .images-brands {
         display: flex;
@@ -148,5 +148,94 @@
         margin-bottom: 30px;
         margin-left: 24px;
         margin-right: 24px;
+    }
+}
+
+/* CSS TOP FEATURE */
+
+.container-features {
+    margin-bottom: 120px;
+    margin-top: 120px ;
+}
+
+.container-features-articles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.container-title {
+    font-family: 'Lucida Sans';
+    font-size: 40px;
+    color: #025157;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.features-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.container-features-articles > article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-features-articles > article > h3 {
+    font-size: 24px;
+    font-family: 'IBM Plex Sans',Arial,sans-serif;
+    margin-bottom: 20px;
+    margin-top: 24px;
+}
+
+.container-features-articles > article > p {
+    color: #4a4a4a;
+}
+
+.container-features-articles > article > img {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.1);
+}
+
+.container-subtitle {
+    font-family: 'Lucida Sans';
+    font-size: 18px;
+    color: #4a4a4a;
+    text-align: center;
+    padding: 24px;
+}
+
+@media (min-width: 768px) { 
+
+    .container-features-articles {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+
+    .container-features-articles > article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 992px) { 
+
+    .container-features-articles {
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
     }
 }

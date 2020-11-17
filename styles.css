@@ -525,4 +525,61 @@ li {
 }
 
 
+/* CSS GROWING */
 
+.container-growing {
+    margin: 16px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-growing {
+    font-size: 55px;
+    font-weight: bold;
+    color: #025157;
+    font-family: vesterbroextrabold,Arial,sans-serif;
+    margin-bottom: 8px;
+}
+
+.description-growing {
+    font-family: 'IBM Plex Sans',Arial,sans-serif;
+    font-size: 18px;
+    color: #4a4a4a;
+    padding-bottom: 16px;
+}
+
+.btn-beefy {
+    font-size: 14px;
+    padding: 15px 20px;
+    text-align: center;
+    color: #fff;
+    background: #025157;
+    border-radius: 8px;
+    border: 0;
+    margin-bottom: 60px;
+}
+
+.carusel {
+    align-self: center;
+}
+
+@media (min-width: 768px) {  
+    .carusel {
+        align-self: flex-start;
+    }
+}
+
+@media (min-width: 992px) {  
+    .container-growing {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 70%;
+        margin: 120px auto;
+    }
+
+    .carusel {
+        align-self: flex-start;
+        padding-right: 30px;
+    }
+}

@@ -67,10 +67,10 @@
 @media (min-width: 992px) {
 
     .container-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         width: 70%;
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
         align-items: center;
     }
 
@@ -582,4 +582,38 @@ li {
         align-self: flex-start;
         padding-right: 30px;
     }
+}
+
+/* CSS ECOMMERCE */
+
+.container-ecommerce {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 24px;
+    margin: 16px;
+    margin-bottom: 160px;
+}
+
+.container-ecommerce > article > img { 
+    width: 100%;
+}
+
+@media (min-width: 768px) {  
+    .container-ecommerce {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 24px;
+    }    
+}
+
+@media (min-width: 992px) {  
+    .container-ecommerce {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+        margin: 0 auto;
+        align-items: center;
+        margin-bottom: 160px;
+    }
+
 }
